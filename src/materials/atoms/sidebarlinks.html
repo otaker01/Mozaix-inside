@@ -1,0 +1,11 @@
+<!-- <div style="display: flex; align-items: center;">
+    <span class="icon-cross"></span>
+    <a class="{{classes}}">{{default text "test"}}</a>
+</div> -->
+
+<div class="sidebarlinks">
+    {{#each global.sidebarlinks}}
+        <span class="icon-{{icon}}"></span>
+        <a class=" sidebarlink {{icon}} {{#compare icon '==' ../active}}active{{/compare}}" href="{{link}}">{{title}}</a>
+    {{/each}}
+</div>

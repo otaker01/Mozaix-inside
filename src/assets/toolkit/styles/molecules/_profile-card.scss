@@ -1,0 +1,30 @@
+.profile-card {
+    width: 347px;
+    background-color: #ffffff;
+    height: 108px;
+    padding: 20px;
+    // border: 2px solid red;
+    &.big-card {
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.profile-body {
+    margin-top: 40px;
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 12px;
+        // grid-template-rows: 30px 30px;
+        // grid-auto-flow: column;
+    }
+    .big-card {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        // padding: 21px;
+        // padding-top: 21px;
+    }
+}

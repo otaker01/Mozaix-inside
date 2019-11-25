@@ -30,3 +30,14 @@ $(function(){
 		$(".fouc").css('opacity',1);
 	},200);
 });
+
+// let searchResults = document.getElementById('search-result');
+// let searchbar = document.getElementById('searchbar');
+
+// searchbar.addEventListener('click', () => {
+// 	searchResults.classList.add("displayFlex")
+// })
+
+$("#searchbar").click(function(){
+	$(".search-results").addClass("displayFlex");
+  });

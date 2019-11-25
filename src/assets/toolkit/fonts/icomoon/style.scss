@@ -1,19 +1,20 @@
 @import "variables";
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?c9nm38');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?c9nm38#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?c9nm38') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?c9nm38') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?c9nm38#icomoon') format('svg');
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wuj5y7');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wuj5y7#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wuj5y7') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wuj5y7') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wuj5y7##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: '#{$icomoon-font-family}' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -26,119 +27,73 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-cart {
+.icon-envelope {
   &:before {
-    content: $icon-cart;
+    content: $icon-envelope;     
+    color: #8b8b8b;
   }
 }
-.icon-envelop {
+.icon-event {
   &:before {
-    content: $icon-envelop;
+    content: $icon-event;     
+    color: #575757;
   }
 }
-.icon-location {
+.icon-heart {
   &:before {
-    content: $icon-location;
-  }
-}
-.icon-search {
-  &:before {
-    content: $icon-search;
-  }
-}
-.icon-cog {
-  &:before {
-    content: $icon-cog;
-  }
-}
-.icon-plus {
-  &:before {
-    content: $icon-plus;
-  }
-}
-.icon-minus {
-  &:before {
-    content: $icon-minus;
-  }
-}
-.icon-cross {
-  &:before {
-    content: $icon-cross;
-  }
-}
-.icon-arrow-up2 {
-  &:before {
-    content: $icon-arrow-up2;
-  }
-}
-.icon-arrow-right2 {
-  &:before {
-    content: $icon-arrow-right2;
-  }
-}
-.icon-arrow-down2 {
-  &:before {
-    content: $icon-arrow-down2;
-  }
-}
-.icon-arrow-left2 {
-  &:before {
-    content: $icon-arrow-left2;
-  }
-}
-.icon-circle-up {
-  &:before {
-    content: $icon-circle-up;
-  }
-}
-.icon-circle-right {
-  &:before {
-    content: $icon-circle-right;
-  }
-}
-.icon-circle-down {
-  &:before {
-    content: $icon-circle-down;
-  }
-}
-.icon-circle-left {
-  &:before {
-    content: $icon-circle-left;
-  }
-}
-.icon-google-plus {
-  &:before {
-    content: $icon-google-plus;
-  }
-}
-.icon-facebook {
-  &:before {
-    content: $icon-facebook;
+    content: $icon-heart;     
+    color: #676767;
   }
 }
 .icon-instagram {
   &:before {
-    content: $icon-instagram;
+    content: $icon-instagram;     
+    color: #8b8b8b;
   }
 }
-.icon-twitter {
+.icon-magnifying-glass {
   &:before {
-    content: $icon-twitter;
+    content: $icon-magnifying-glass; 
   }
 }
-.icon-youtube {
+.icon-newspaper {
   &:before {
-    content: $icon-youtube;
+    content: $icon-newspaper;     
+    color: #575757;
   }
 }
-.icon-behance {
+.icon-package {
   &:before {
-    content: $icon-behance;
+    content: $icon-package;     
+    color: #575757;
   }
 }
-.icon-linkedin2 {
+.icon-send-button {
   &:before {
-    content: $icon-linkedin2;
+    content: $icon-send-button; 
+  }
+}
+.icon-support {
+  &:before {
+    content: $icon-support;     
+    color: #575757;
+  }
+}
+.icon-thumb-up {
+  &:before {
+    content: $icon-thumb-up;     
+    color: #676767;
+  }
+}
+.icon-tick {
+  &:before {
+    content: $icon-tick;     
+    color: #5d92dc;
+  }
+}
+.icon-message-circle {
+  &:before {
+    content: $icon-message-circle; 
   }
 }
 

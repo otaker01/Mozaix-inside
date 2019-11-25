@@ -1,0 +1,24 @@
+.profile-card-info {
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0px;
+    color: #8b8b8b;
+    &.years {
+        color: #222222;
+        font-weight: bold;
+    }
+    &.day {
+        padding: 11px 20px;
+        font-family: Raleway;
+        font-size: 17px;
+        font-weight: 500;
+        color: #8b8b8b;
+        &.hours {
+            color: black;
+            font-weight: bold;
+        }
+    }
+} 

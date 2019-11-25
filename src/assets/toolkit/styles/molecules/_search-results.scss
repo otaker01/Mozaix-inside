@@ -1,0 +1,23 @@
+.search-results {
+    width: 308px;   
+    height: 284px;
+    background-color: white;
+    position: absolute;
+    top: 45px;
+    right: 4px;
+    z-index: 111;
+    // display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 11px;
+    border: 1px solid gray;
+    padding: 5px 11px;
+    overflow: hidden;
+}
+.displayFlex {
+    display: flex;
+}
+.searchs {
+    position: relative;
+}

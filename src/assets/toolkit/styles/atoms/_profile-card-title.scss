@@ -1,0 +1,21 @@
+.profile-card-title {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    color: #404040;
+    text-transform: capitalize;
+    &.day {
+        padding: 10px 20px; 
+    }
+
+}
+
+
+.right-card {
+    .profile-card-title {
+        font-weight: 500;
+    }
+}

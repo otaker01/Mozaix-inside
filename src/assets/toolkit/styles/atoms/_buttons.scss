@@ -1,0 +1,70 @@
+.buttons {
+    // background-color: blue;
+    color: white;
+    margin-bottom: 30px;
+    font-family: Raleway;
+    outline: none;
+    &.checkin {
+        width: 153px;
+        color: white;
+        height: 33px;
+        border-radius: 20px;
+        background-color: #558be2;
+        border-bottom-left-radius: 0px;
+        &::before {
+            content: "Check in"
+        }
+    }
+    &.checked {
+        width: 123px;
+        color: white;
+        height: 29px;
+        border-radius: 20px;
+        background-color: #568ce2;
+        border-top-right-radius: 0px;
+        &::before {
+            content: "Check out";
+        }
+    }
+    &.hibernated {
+        width: 153px;
+        height: 33px;
+        background-color: #b2b2b2;
+        border-radius: 33px;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: Raleway;
+        &::before {
+            content: "Hibernated";
+        }
+    }
+    &.pause {
+        margin-left: 10px;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        // background: none;
+        // background-color: transparent;
+        border: 1px solid blue;
+        // background-image: url('../../images/kaneki3.jpg');
+        &::before {
+            content: "";
+            // width: 8px;
+            // height: 5px;
+            padding: 0px 2px;
+            margin-right: 2px;
+            border-radius: 5px;
+            border: 1px solid blue;
+        }
+        &::after {
+            content: "";
+            // width: 8px;
+            // height: 5px;
+            border-radius: 5px;
+            padding: 0px 2px;
+            border: 1px solid blue;
+        }
+        
+    }
+}

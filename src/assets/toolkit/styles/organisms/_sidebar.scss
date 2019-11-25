@@ -1,0 +1,25 @@
+.sidebar {
+    width: 347px;
+    height: 100vh;
+    background-color:  #f1f1f1;
+    box-shadow: 4px 0px 10px 0px rgba(199, 198, 198, 0.137);
+    display: flex;
+    position: fixed;
+    // transform: translateX(-440px);
+    transform: inherit;
+    z-index: 10;
+    justify-content: flex-end;
+
+}
+.sidebar-el {
+    width: 289px;
+    height: 100%;
+    // background-color: lightsalmon;
+    // margin-left: 158px;
+    padding-top: 63px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}

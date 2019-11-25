@@ -1,0 +1,23 @@
+.like-comment-div {
+    display: flex;
+    padding-top: 15px;
+    &.agree {
+        justify-content: space-between;
+    }
+}
+
+.like-comment {
+    width: 87px;
+    font-family: Montserrat;
+    font-size: 17px;
+    padding-right: 20px;
+    color: #676767;
+    &.agree {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.agree-num {
+    color: rgb(0, 89, 255);
+}

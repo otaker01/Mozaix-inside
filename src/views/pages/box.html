@@ -1,0 +1,14 @@
+{{> sidebar activeItem="box"}}
+{{> box-header activeItem="allboxes"}}
+{{> rightbar}}
+<div class="page">
+    <div class="feed-div">
+        {{> newpost}}
+        {{> box-postcard itemType="Complaint"}}
+        {{> box-simplecard itemType='Complaint'}}
+        {{> box-postcard itemType="Suggestion"}}
+        {{> box-simplecard itemType='Suggestion'}}
+        {{> box-postcard itemType="Request"}}
+        {{> box-simplecard itemType='Request'}}
+    </div>
+</div>

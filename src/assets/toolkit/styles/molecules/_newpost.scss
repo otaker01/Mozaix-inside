@@ -1,0 +1,39 @@
+.newpost {
+    height: 66px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-left: 20px;
+    z-index: 500;
+    
+}
+
+.newpost-input {
+    margin: 0 10px;
+    padding: 0 10px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-family: Raleway;
+    font-size: 17px;
+    z-index: 5;
+    &::placeholder {
+        color: #000;
+        opacity: 0.45;
+        font-size: 16px;
+        font-family: Montserrat;
+    }
+    &:focus {
+        border: 1px solid transparent;
+        box-shadow: none;
+        background: none;
+       
+    }
+}
+
+.send-button {
+    padding: 20px;
+    outline: none;
+    // opacity: 0;
+    // display: none;
+}

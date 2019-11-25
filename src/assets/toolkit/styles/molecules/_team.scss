@@ -1,0 +1,84 @@
+.team-header {
+    height: 100px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    // padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    // align-items: ;
+    justify-content: flex-end;
+}
+.team-input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-family: Montserrat;
+    color: #212121;
+    font-size: 20px;
+    &:focus {
+        outline: none;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+
+.team-members {
+    padding: 0;
+    /* padding: 0 20px; */
+    padding-top: 20px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 165px 165px 165px 165px 165px 165px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+.team-member {
+    width: 165px;
+    height: 165px;
+    border-radius: 6px;
+     background-color: #ffffff;
+     padding: 10px
+}
+
+.first-part {
+    height: 50%;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.team-member-photo {
+    width: 62px;
+    height: 62px;
+    
+    border-radius: 50%;
+}
+.second-part {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50%;
+    // align-items: flex-end;
+    justify-content: center;
+
+}
+.team-member-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+    line-height: 20px;
+    margin: 0;
+    text-transform: capitalize;
+    
+}
+
+.team-member-role {
+    color: #838383;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+    // text-transform: capitalize;
+}

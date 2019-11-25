@@ -1,0 +1,5 @@
+<div>
+      {{#each global.headerlinks}}
+        <a class="headerlink {{icon}} {{#compare icon '==' ../active}}active{{/compare}}" href="{{link}}">{{title}}</a>
+    {{/each}}
+</div>

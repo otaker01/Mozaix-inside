@@ -1,0 +1,71 @@
+sidebarlinks:
+  - title: Feed
+    icon: feed
+    link: "http://localhost:3000/pages/home.html"
+  - title: Chat
+    icon: chat
+    link: "http://localhost:3000/pages/chat.html"
+  - title: Box
+    icon: box
+    link: "http://localhost:3000/pages/box.html"
+  - title: Events
+    icon: events
+    link: "http://localhost:3000/pages/events.html"
+  - title: Team
+    icon: team
+    link: "http://localhost:3000/pages/team.html"
+
+headerlinks: 
+  - title: All posts
+    icon: allpost
+    link: "http://localhost:3000/pages/home.html"
+  - title: Photos
+    icon: photos
+    link: "http://localhost:3000/pages/home-photos.html"
+  - title: Post
+    icon: post
+    link: "http://localhost:3000/pages/home-post.html"
+  - title: Pinned
+    icon: pinned
+    link: "http://localhost:3000/pages/home-pinned.html"
+  - title: Daily Reports
+    icon: daily reports
+    link: "http://localhost:3000/pages/home-daily-reports.html"
+
+
+box-headerlinks: 
+  - title: All boxes
+    icon: allboxes
+    link: "http://localhost:3000/pages/box.html"
+  - title: Complaints
+    icon: complaints
+    link: "http://localhost:3000/pages/box-complaints.html"
+  - title: Suggestions
+    icon: suggestions
+    link: "http://localhost:3000/pages/box-suggestions.html"
+  - title: Requests
+    icon: requests
+    link: "http://localhost:3000/pages/box-requests.html"
+
+
+events-headerlinks: 
+  - title: Cards
+    icon: cards
+    link: "http://localhost:3000/pages/events.html"
+  - title: Calendar
+    icon: calendar
+    link: "http://localhost:3000/pages/events-calendar.html"
+
+
+profile-headerlinks: 
+  - title: Profile
+    icon: profile
+    link: "http://localhost:3000/pages/profile.html"
+  - title: Posts
+    icon: posts
+    link: "http://localhost:3000/pages/profile-posts.html"
+
+chat-headerlinks:
+  - title: 
+    icon:
+    linl:
