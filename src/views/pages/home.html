@@ -1,51 +1,50 @@
-<!-- {{> blackscreen}} -->
-{{> sidebar activeItem="feed"}}
-{{> header activeItem="allpost"}}
-{{> rightbar}}
-<div class="page">
-	
-    <div class="feed-div">
-        {{> newpost}}
-        {{> postcard name="pellumb hasani" info="Today 15:32" info2="Pinned"}}
-        {{> simplecard name="otaker01" info="Today, 15:12" info2="pinned"}}
-        {{> postcard  name="labinot jaha"}}
-        {{> simplecard name="naim hasani" info="Today 11:45"}}
-        {{> postcard name="lirim hasani"}}
-        {{> simplecard name='jon gruda'}}
-        {{> postcard name='riad karabegu'}}
-        {{> simplecard name="fanol jakupi"}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
-        {{> simplecard}}
-        {{> postcard}}
+{{> report-splash}}
+{{> report-write}}
+{{> report-splash-out}}
 
-
-        </div>	
+<div class="main-container">
+    <div class="main-header">
+        <div class="main-header-inner">
+            <div class="main-header-left"></div>
+            <div class="main-header-right">
+                    {{> header activeItem="allpost"}}
+            </div>
+        </div>
+    </div>
+    <div class="main-menu">
+        <div class="main-menu-inner">
+            {{> sidebar activeItem="feed"}}
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="saysomething">
+                <div class="saysomething__content">
+                {{> newpost}}
+                </div>
+                <div class="saysomething__overlay"></div>
+            </div>
+            <!-- <div class="events-row">
+                <div>
+                    asdasd
+                </div>
+            </div> -->
+            <div class="feed-div" style="padding-top: 0px;">
+                
+                {{> simplecard name="Avni bixhaku" info="Today 11:45"}}
+                {{> postcard name="pellumb hasani" info="Today 15:32" info2="Pinned"}}
+                {{> simplecard name="otaker01" info="Today, 15:12" }}
+                {{> postcard  name="labinot jaha"}}
+                {{> simplecard name='jon gruda'}}
+                {{> postcard name="lirim hasani"}}
+                {{> simplecard name="fanol jakupi"}}
+                {{> postcard name='riad karabegu'}}
+            </div>
+        </div>
+    </div>
+    <div class="main-sidebar">
+        <div class="main-sidebar-inner">
+                {{> rightbar}}
+        </div>
+    </div>
 </div>

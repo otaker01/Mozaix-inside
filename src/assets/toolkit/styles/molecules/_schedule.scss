@@ -1,15 +1,21 @@
 .schedule {
-    width: 1066px;
-    height: 377px;
+    width: 866px;
+    // height: 377px;
+    // padding-bottom: 20px;
     background-color: white;
     // border: 1px solid red;
     margin-bottom: 20px;
-    border-radius: 11px;
+    border-radius: 8px;
     // padding: 20px;
     margin-top: 20px;
+    border: 1px solid #d3d3d3;
+    :last-child {
+        border-bottom: none;
+    }
 }
 .days {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #d3d3d3;
     display: flex;
     justify-content: space-between;
+    
 }

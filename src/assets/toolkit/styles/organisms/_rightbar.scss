@@ -1,17 +1,15 @@
 .rightbar {
-    width: 328px;
-    height: calc(100vh - 102px);
-    transform: translateY(102px);
-    background-color: cadetblue;;
-    background-color: #f1f1f1;
-    position: fixed;
-    right: 0;
+    // width: 398px;
+    widows: 100%;
+    height: calc(100vh - 83px);
+    // position: fixed;
+    // right: 0;
     z-index: 8;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 .right-card {
-    width: 304px;
-    height: 380px;
+    width: 100%;
+    height: 360px;
     background-color: #fff;
     // margin: 20px;
     border-radius: 11px;
@@ -22,7 +20,7 @@
     flex-direction: column;
     margin-bottom: 10px;
     &.event {
-        height: 162px;
+        height: auto;
     }
 }
 .right-card-title {

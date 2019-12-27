@@ -1,0 +1,101 @@
+.splash-card-full-div {
+    width: 100vw;
+    height: 100vh;
+    z-index: 24;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+}
+.splash-card {
+    border: 1px solid lightgray;
+    width: 867px;
+    height: 511px;
+    border-radius: 9px;
+    background-color: #ffffff;
+    position: relative; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &.big {
+        width: 999px;
+        // width: 1530px;
+        height: 613px;
+        // height: 689px;
+        padding: 28px 45px;
+    }
+}
+.splash-up {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+.splash-down-second {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+    padding-top: 56px;
+}
+.splash-image {
+    width: 375px;
+    height: 281px;
+}
+
+.splash-title {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.19;
+    color: #585858;
+    padding-top: 24px;
+    margin-bottom: 8px;
+    &.write {
+        margin: 0;
+        padding: 0;
+        padding-left: 21px;
+    }
+}
+.splash-info {
+    font-family: Montserrat;
+    font-size: 13px;
+    color: #585858;
+}
+.splash-down-first {
+    text-align: center;
+}
+.splash-time {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.19;
+    color: #585858;
+    padding-top: 10px;
+}
+
+.report-write-textarea {
+    resize: none;
+    width: 256px;
+    height: 292px;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+
+.splash-logo-div {
+    height: 96px;
+    display: flex;
+    align-items: center;
+
+}
+.splash-logo {
+    width: 48px;
+    height: 48px;
+}
+
+.splash-textareas {
+    // padding: 0 0 0 48px;
+    display: flex;
+    justify-content: space-between;
+}
+.splash-textarea {
+    width: 456px;
+}

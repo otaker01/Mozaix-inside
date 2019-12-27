@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wuj5y7');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wuj5y7#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wuj5y7') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wuj5y7') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wuj5y7##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?byg0ax');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?byg0ax#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?byg0ax') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?byg0ax') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?byg0ax##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,15 +27,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chevron-1 {
+  &:before {
+    content: $icon-chevron-1;     
+    color: #676767;
+  }
+}
+.icon-chevron {
+  &:before {
+    content: $icon-chevron;     
+    color: #676767;
+  }
+}
+.icon-pencil {
+  &:before {
+    content: $icon-pencil;     
+    color: #6c6c6c;
+  }
+}
+.icon-settings {
+  &:before {
+    content: $icon-settings;     
+    color: #c3c3c3;
+  }
+}
+.icon-chat {
+  &:before {
+    content: $icon-chat; 
+  }
+}
 .icon-envelope {
   &:before {
     content: $icon-envelope;     
     color: #8b8b8b;
   }
 }
-.icon-event {
+.icon-events {
   &:before {
-    content: $icon-event;     
+    content: $icon-events;     
     color: #575757;
   }
 }
@@ -56,15 +85,15 @@
     content: $icon-magnifying-glass; 
   }
 }
-.icon-newspaper {
+.icon-feed {
   &:before {
-    content: $icon-newspaper;     
+    content: $icon-feed;     
     color: #575757;
   }
 }
-.icon-package {
+.icon-box {
   &:before {
-    content: $icon-package;     
+    content: $icon-box;     
     color: #575757;
   }
 }
@@ -73,9 +102,9 @@
     content: $icon-send-button; 
   }
 }
-.icon-support {
+.icon-team {
   &:before {
-    content: $icon-support;     
+    content: $icon-team;     
     color: #575757;
   }
 }
@@ -91,9 +120,20 @@
     color: #5d92dc;
   }
 }
-.icon-message-circle {
+.icon-attachment {
   &:before {
-    content: $icon-message-circle; 
+    content: $icon-attachment;     
+    color: #5d92dc;
+  }
+}
+.icon-folder-download {
+  &:before {
+    content: $icon-folder-download; 
+  }
+}
+.icon-sleepy2 {
+  &:before {
+    content: $icon-sleepy2; 
   }
 }
 

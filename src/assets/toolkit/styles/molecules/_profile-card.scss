@@ -1,11 +1,12 @@
 .profile-card {
-    width: 347px;
+    width: 280px;
     background-color: #ffffff;
-    height: 108px;
+    height: 84px;
     padding: 20px;
-    // border: 2px solid red;
+    border-radius: 8px;
+    border: 1px solid rgb(211, 211, 211);
     &.big-card {
-        height: 230px;
+        height: 180px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -13,11 +14,13 @@
 }
 
 .profile-body {
-    margin-top: 40px;
+    margin-top: 15px;
     .cards {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-row-gap: 12px;
+        grid-column-gap: 12px;
+        
         // grid-template-rows: 30px 30px;
         // grid-auto-flow: column;
     }
@@ -26,5 +29,22 @@
         grid-row: 1 / 3;
         // padding: 21px;
         // padding-top: 21px;
+    }
+}
+
+
+// PROFILE POST PAGE SCSS
+// PROFILE POST PAGE SCSS
+
+.profile-head {
+    // position: relative;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 1.5px;
+        background-color: rgba(0, 0, 0, 0.205);
+        position: absolute;
+        bottom: -10px;
+        left: 0;
     }
 }

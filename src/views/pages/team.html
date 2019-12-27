@@ -1,47 +1,63 @@
-{{> sidebar activeItem="team"}}
-<div class="page fullbody">
-	
-    <div class="feed-div team-feed">
-        <div class="team-header">
-            <input id="teamInput" class="team-input" type="text" placeholder="Find your team members">
-
+<div class="main-container">
+        <div class="main-header">
+            <div class="main-header-inner">
+                <div class="main-header-left"></div>
+                <div class="main-header-right">
+                    <div class="team-header">
+                        <input id="teamInput" class="team-input" type="text" placeholder="Find your team members">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="team-members">
-            {{> team-members name="Pellumb Hasani" role="Full Stack Developer" role2="CEO - CTO"}}
-            {{> team-members name="Labinot Jaha" role="Front End Developer" role2=""}}
-            {{> team-members name="Drilon Jaha" role="CEO" role2=""}}
-            {{> team-members name="Shkodran Arifi" role="UI/UX Designer" role2=""}}
-
-            <a style="margin: 0;padding: 0;" href="http://localhost:3000/pages/profile.html">
-                {{> team-members name="Abdussamed Bytyqi" role="Front End Developer"}}
-            </a>
-            {{> team-members name="Avni Bixhaku" role="UI/UX Designer" role2=""}}
-            {{> team-members name="Gjergj Kadriu" role="Full Stack Developer" role2=""}}
-            {{> team-members name="Voltis Jakupi" role="Front End Developer" role2=""}}
-            {{> team-members name="Skender Sadiku" role="Front End Developer" role2=""}}
-            {{> team-members name="Leotrim Mustafa" role="Back End Developer" role2=""}}
-            {{> team-members name="Ardit Daku" role="Back End Developer" role2=""}}
-            {{> team-members name="naim hasani" role="Front End Developer" role2=""}}
-            {{> team-members name="arber mjeku" role="Back End Developer" role2=""}}
-            {{> team-members name="jondi gruda" role="Me shnosh qsafen" role2=""}}
-            {{> team-members}}
-            {{> team-members}}
-            {{> team-members}}
-            {{> team-members}}
+        <div class="main-menu">
+            <div class="main-menu-inner">
+                    {{> sidebar activeItem="team"}}
+                </div>
         </div>
-     </div>	
-</div>
+        <div class="main-content">
+            <div class="main-content-inner">
+                    <div class="team-members">
+                            {{> team-members name="Pellumb Hasani" role="Full Stack Developer"}}
+                            {{> team-members name="lirim hasani" role='Back End Developer' role2='CEO'}}
+                            {{> team-members name="abdussamed bytyqi" role="Soon" role2="Full Stack Developer"}}
+                            {{> team-members name="Labinot Jaha" role="Front End Developer"}}   
+                            {{> team-members name="Drilon Jaha" role="CEO"}} 
+                            {{> team-members name="Shkodran Arifi" role="UI/UX Designer"}}
+                            {{> team-members name="Avni Bixhaku" role="UI/UX Designer" role2="CEO"}}
+                            {{> team-members name="Gjergj Kadriu" role="Full Stack Developer"}}
+                            {{> team-members name="Voltis Jakupi" role="Front End Developer"}}
+                            {{> team-members name="Skender Sadiku" role="Front End Developer"}}
+                            {{> team-members name="Leotrim Mustafa" role="Back End Developer"}}
+                            {{> team-members name="Ardit Daku" role="Back End Developer"}}
+                            {{> team-members name="naim hasani" role="Front End Developer"}}
+                            {{> team-members name="arber bali" role="Back End Developer" role2="Atomist IQ-147!"}}
+                            {{> team-members name="jondi gruda" role="Me shnosh qsafen"}}
+                            {{> team-members name='alfred shalaku' role="Motion Designer"}}
+                            {{> team-members name='Riad alija' role="Front End"}}
+                            {{> team-members name='suhejb fetahi' role='Front End Developer'}}
+            
+                    </div> 
+            </div>
+        </div>
+        <div class="main-sidebar">
+            <!-- <div class="main-sidebar-inner">
+                Sidebar
+            </div> -->
+        </div>
+    </div>
 
 
+
+    
 <script>
-    let teamInput = document.getElementById('teamInput');
-
-    teamInput.focus();
-
-    teamInput.onblur = function () {
-        setTimeout(function () {
-            teamInput.focus();
-        });
-    };
-
-</script>
+        let teamInput = document.getElementById('teamInput');
+    
+        teamInput.focus();
+    
+        teamInput.onblur = function () {
+            setTimeout(function () {
+                teamInput.focus();
+            });
+        };
+    
+    </script>

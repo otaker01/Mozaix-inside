@@ -1,21 +1,50 @@
-{{> sidebar activeItem="feed"}}
-{{> header activeItem="photos"}}
-{{> rightbar}}
-<div class="page">
-	
-    <div class="feed-div">
-        {{> simplecard}}
-        {{> simplecard}}
-        {{> simplecard}}
-        {{> simplecard}}
-        {{> simplecard}}
-        {{> simplecard}}
-        {{> simplecard}}
-        {{> simplecard}}
-        {{> simplecard}}
-        {{> simplecard}}
-        {{> simplecard}}
- 
+{{> report-splash}}
+{{> report-write}}
+{{> report-splash-out}}
 
-        </div>	
+<div class="main-container">
+    <div class="main-header">
+        <div class="main-header-inner">
+            <div class="main-header-left"></div>
+            <div class="main-header-right">
+                    {{> header activeItem="photos"}}
+            </div>
+        </div>
+    </div>
+    <div class="main-menu">
+        <div class="main-menu-inner">
+            {{> sidebar activeItem="feed"}}
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- <div class="saysomething">
+                <div class="saysomething__content">
+                    <input />
+                </div>
+                <div class="saysomething__overlay"></div>
+            </div> -->
+            <!-- <div class="events-row">
+                <div>
+                    asdasd
+                </div>
+            </div> -->
+            <div class="feed-div" >
+
+                {{> simplecard name="Avni bixhaku" info="Today 11:45"}}
+                {{> simplecard name="otaker01" info="Today, 15:12" info2="pinned"}}
+                {{> simplecard name='jon gruda'}}
+                {{> simplecard name="fanol jakupi"}}
+                {{> simplecard name="Avni bixhaku" info="Today 11:45"}}
+                {{> simplecard name="otaker01" info="Today, 15:12" info2="pinned"}}
+                {{> simplecard name='jon gruda'}}
+                {{> simplecard name="fanol jakupi"}}
+            </div>
+        </div>
+    </div>
+    <div class="main-sidebar">
+        <div class="main-sidebar-inner">
+                {{> rightbar}}
+        </div>
+    </div>
 </div>

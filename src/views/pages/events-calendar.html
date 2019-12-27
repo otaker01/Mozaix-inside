@@ -1,8 +1,29 @@
-{{> sidebar activeItem="events"}}
-{{> events-header activeItem="calendar"}}
-{{> rightbar}}
-<div class="page">
-    <div class="feed-div">
-       <img src="../../assets/toolkit/images/calendar.png" alt="">
+<div class="main-container">
+    <div class="main-header">
+        <div class="main-header-inner">
+            <div class="main-header-left"></div>
+            <div class="main-header-right">
+                {{> events-header activeItem="calendar"}}
+            </div>
+        </div>
+    </div>
+    <div class="main-menu">
+        <div class="main-menu-inner">
+            {{> sidebar activeItem="events"}}
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div id="events">
+                <div data-event="01/02/2020">{{> event-card }}</div>
+                <div data-event="01/02/2020">{{> event-card }}</div>
+                <div data-event="24/01/2020">{{> event-card }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="main-sidebar">
+        <div class="main-sidebar-inner">
+            {{> rightbar}}
+        </div>
     </div>
 </div>

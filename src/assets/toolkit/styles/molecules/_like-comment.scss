@@ -1,6 +1,6 @@
 .like-comment-div {
     display: flex;
-    padding-top: 15px;
+    padding-top: 5px;
     &.agree {
         justify-content: space-between;
     }
@@ -9,15 +9,26 @@
 .like-comment {
     width: 87px;
     font-family: Montserrat;
-    font-size: 17px;
+    font-size: 15px;
     padding-right: 20px;
+    outline: none;
     color: #676767;
+    // color: black;
     &.agree {
         padding: 0;
         margin: 0;
     }
+    &.liked {
+        color: #5d92dc;
+        &::after {
+            content: "d";
+            color: #5d92dc;
+            font-family: Montserrat;
+            font-size: 15px;
+        }
+    }
 }
 
 .agree-num {
-    color: rgb(0, 89, 255);
+    color: #0059ff;
 }

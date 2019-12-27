@@ -5,7 +5,8 @@
 
 <div class="sidebarlinks">
     {{#each global.sidebarlinks}}
-        <span class="icon-{{icon}}"></span>
-        <a class=" sidebarlink {{icon}} {{#compare icon '==' ../active}}active{{/compare}}" href="{{link}}">{{title}}</a>
+        <a class="sidebarlink {{icon}} {{#compare icon '==' ../active}}active{{/compare}}" href="{{link}}">
+            <span class="icon-{{icon}} sidebaricons"></span> {{title}}
+        </a>
     {{/each}} 
 </div>

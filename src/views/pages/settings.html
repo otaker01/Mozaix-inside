@@ -1,0 +1,38 @@
+<div class="main-container">
+        <div class="main-header">
+            <div class="main-header-inner">
+                <div class="main-header-left"></div>
+                <div class="main-header-right">
+                    {{> blank-header activeItem id='display-initial'}}
+                </div>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="main-menu-inner">
+                {{> sidebar activeItem="settings"}}
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-content-inner">
+                    <div class="settings-content">
+
+                            <div class="settings-cards">
+                                {{> settings-card}}
+                                {{> settings-card2}}
+                                {{> settings-card3}}
+                                {{> settings-card4}}
+                            </div>
+                            <div class="save-change-div">
+                    
+                                {{> buttons id='terms-conditions' classes="buttons terms-conditions"}}   
+                                {{> buttons classes="buttons save-changes"}}   
+                            </div>  
+                        </div>
+            </div>
+        </div>
+        <!-- <div class="main-sidebar">
+            <div class="main-sidebar-inner">
+                Sidebar
+            </div>
+        </div> -->
+    </div>

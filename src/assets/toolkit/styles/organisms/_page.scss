@@ -1,13 +1,19 @@
+
+
 .page {
-    width: calc(100% - 675px);
-    min-height: 100vh;
-    background-color: red;
-    background-color: #f1f1f1;
-    transform: translate(347px);
-    // transform: translateY(102px);
+    // width: calc(100% - 739px);
+    // min-height: 100vh;
+    // background-color: red;
+    // background-color: #f1f1f1;
+    // transform: translate(359px);
+    // overflow: hidden;
 } 
 .fullbody {
-    width: calc(100% - 347px);   
+    width: calc(100% - 447px);  
+}
+.settings-body {
+    padding-top: 102px;
+    overflow: hidden;
 }
 .feed-div {
     // padding-top: 140px;
@@ -15,51 +21,73 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blue;
-    background-color: #f1f1f1;
-    z-index: 3333;
+    z-index: 33;
     // text-align: center;
-    padding: 140px 40px 0px 40px;
+    // padding: 30px 40px 0px 40px;
+    padding-top: 30px;
     &.team-feed {
         margin: 0;
         padding: 0 57px;
+        padding-right: 115px;
     }
     &.event-cards {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-row-gap: 20px;
+        @include flex-grid-row();
+        // display: grid;
+        // grid-template-columns: auto auto;
+        // grid-row-gap: 20px;
         max-width: 1000px;
+        //padding-left: 45px;
     }
 }
 
 .profile-page {
     
-    .feed-div {
-        // align-items: unset;
-        padding-left: 57px;
-        max-width: 1166px;
+//     .feed-div {
+//         align-items: flex-start;
+//         // padding-left: 57px;
+//         max-width: 1166px;
+
         
-    }
-    .profile-head {
-        align-self: flex-start;
-        padding-left: 10px;
-    }
-}
-.profile-page2 {
-    .feed-div {
-        align-items: unset;
-        padding-left: 57px;
-    }
-    .profile-head {
-        margin-bottom: 40px;
-        // align-self: ;
-    }
-}
-
-
-
-
-// body {
-//     filter: brightness(0.4);
-//     z-index: 200;
+//     }
+//     .profile-head {
+//         align-self: flex-start;
+//         padding-left: 10px;
+//     }
 // }
+// .profile-page2 {
+//     .feed-div {
+//         align-items: unset;
+//         padding-left: 57px;
+//     }
+//     .profile-head {
+//         margin-bottom: 40px;
+//         // align-self: ;
+//     }
+}
+
+
+
+.onclick-dark {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 100;
+    // filter: brightness(0.5);
+    display: none;
+
+}
+
+
+.splash-black-screen {
+    width: calc(100vw - 0px);
+    height: 100vh;
+    z-index: 22;
+    filter: brightness(0.5);
+    filter: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    // overflow: hidden;
+    overflow-x: hidden;
+}

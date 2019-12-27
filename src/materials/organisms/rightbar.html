@@ -3,16 +3,16 @@
         <div class="right-card-head">
             {{> profile-card-title title="Timetables"}}
             <div class="searchbar-box timetables">
-                <label>
+                <label style="position: relative;top: 2px">
                     <input class="search-input timetables" type="text">
                     <span class="icon-magnifying-glass search-icon timetables"></span>
                 </label>
              </div>
         </div>
         <div class="right-card-body">
-            {{> user name='Labinot Jaha' info="09:00 - 19:00" classes="active"}}
-            {{> user name='Abdussamed Bytyqi' info="09:00 - 19:00" }} 
-            {{> user name='ardit daku' info="09:00 - 19:00" classes="active"}} 
+            {{> user name='Abdussamed bytyqi' info="09:00 - 19:00" classes="active"}}
+            {{> user name='labinot jaha' info="09:00 - 19:00" }} 
+            {{> user name='avni katunari' info="09:00 - 19:00" classes="active"}} 
             {{> user name='lirim hasani' info="09:00 - 19:00" }} 
             {{> user name='fanol jakupi' info="09:00 - 19:00" classes="active"}} 
             {{> user name='jon gruda' info="09:00 - 19:00" }}
@@ -27,8 +27,11 @@
     <div class="right-card event">
         {{> profile-card-title title="Event"}}
         {{> profile-card-info info="Next"}}
-        <div style="margin-top: 29px">
+        <div style="margin-top: 15px">
             {{> user name='football game' info='Monday, 7th November'}}
         </div>
+    </div>
+    <div class="dark-bg">
+
     </div>
 </div>

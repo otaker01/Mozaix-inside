@@ -1,0 +1,64 @@
+.comments {
+    margin: 10px 0px;
+    // background: crimson;
+    // display: none;
+    
+    
+}
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.comment-part2 {
+    
+    // min-height: 40px;
+    background-color: #f0f0f0;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+.comment-user-name {
+    font-weight: bold;
+    color: #5d92dc;
+    font-family: Montserrat;
+    font-size: 14px;
+    margin-right: 5px;
+    text-transform: capitalize;
+}
+.comment-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.27;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #000000;
+
+}
+
+.new-comment {
+    display: flex;
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0;
+    align-items: flex-start;
+
+}
+.comment-input {
+    // background-color: crimson;
+    border: solid 0.6px #707070;
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+    padding: 6px 10px;
+    padding-left: 15px;
+    &::placeholder {
+        color: crimson;
+    }
+}
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    opacity: 0.44;
+    
+    // display: block; /* For Firefox */
+  }

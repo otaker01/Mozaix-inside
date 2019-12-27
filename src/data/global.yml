@@ -14,6 +14,9 @@ sidebarlinks:
   - title: Team
     icon: team
     link: "http://localhost:3000/pages/team.html"
+  - title: Settings
+    icon: settings
+    link: "http://localhost:3000/pages/settings.html"
 
 headerlinks: 
   - title: All posts
@@ -65,7 +68,7 @@ profile-headerlinks:
     icon: posts
     link: "http://localhost:3000/pages/profile-posts.html"
 
-chat-headerlinks:
+blank-headerlinks:
   - title: 
     icon:
     linl:

@@ -1,51 +1,59 @@
-{{> sidebar activeItem="feed"}}
-{{> header activeItem="post"}}
-{{> rightbar}}
-<div class="page">
-	
-    <div class="feed-div">
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        {{> postcard}}
-        
-    </div>	
-    {{> postcard}}
+{{> report-splash}}
+{{> report-write}}
+{{> report-splash-out}}
+
+<div class="main-container">
+    <div class="main-header">
+        <div class="main-header-inner">
+            <div class="main-header-left"></div>
+            <div class="main-header-right">
+                    {{> header activeItem="post"}}
+            </div>
+        </div>
+    </div>
+    <div class="main-menu">
+        <div class="main-menu-inner">
+            {{> sidebar activeItem="feed"}}
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- <div class="saysomething">
+                <div class="saysomething__content">
+                    <input />
+                </div>
+                <div class="saysomething__overlay"></div>
+            </div> -->
+            <!-- <div class="events-row">
+                <div>
+                    asdasd
+                </div>
+            </div> -->
+            <div class="feed-div" >
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+                {{> postcard}}
+            </div>
+        </div>
+    </div>
+    <div class="main-sidebar">
+        <div class="main-sidebar-inner">
+                {{> rightbar}}
+        </div>
+    </div>
 </div>

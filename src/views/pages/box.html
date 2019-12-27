@@ -1,14 +1,44 @@
-{{> sidebar activeItem="box"}}
-{{> box-header activeItem="allboxes"}}
-{{> rightbar}}
-<div class="page">
-    <div class="feed-div">
-        {{> newpost}}
-        {{> box-postcard itemType="Complaint"}}
-        {{> box-simplecard itemType='Complaint'}}
-        {{> box-postcard itemType="Suggestion"}}
-        {{> box-simplecard itemType='Suggestion'}}
-        {{> box-postcard itemType="Request"}}
-        {{> box-simplecard itemType='Request'}}
+{{> report-splash}}
+{{> report-write}}
+{{> report-splash-out}}
+<div class="main-container">
+        <div class="main-header">
+            <div class="main-header-inner">
+                <div class="main-header-left"></div>
+                <div class="main-header-right">
+                        {{> box-header activeItem="allboxes"}}
+                </div>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="main-menu-inner">
+                    {{> sidebar activeItem="box"}}
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-content-inner">
+                <div class="saysomething">
+                    <div class="saysomething__content">
+                        
+                        {{> newpost id='newpost2'}}
+                        {{> newpost-2}}
+                
+                    </div>
+                    <div class="saysomething__overlay"></div>
+                </div>
+                <div class="feed-div" style="padding-top: 0px;">
+                {{> box-simplecard itemType='Complaint' name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                {{> box-postcard itemType="Complaint"  name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                {{> box-postcard itemType="Suggestion"  name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                {{> box-simplecard itemType='Suggestion'  name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+               {{> box-postcard itemType="Request"}}
+                {{> box-simplecard itemType='Request'}}
+                </div>
+            </div>
+        </div>
+        <div class="main-sidebar">
+            <div class="main-sidebar-inner">
+                {{> rightbar}}
+            </div>
+        </div>
     </div>
-</div>

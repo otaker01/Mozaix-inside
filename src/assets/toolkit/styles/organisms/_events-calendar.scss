@@ -1,0 +1,115 @@
+
+.events-calendar__header {
+    
+}
+
+.events-calendar__prev {
+    display: none;
+}
+
+.events-calendar__next {
+    display: none;
+}
+
+.events-calendar__main {
+    @include flex-grid-row();
+    padding-top: 24px;
+}
+
+.events-calendar__month {
+    @include flex-grid-column(12);
+    padding-bottom: 20px;
+    @include breakpoint(800px up) {
+        @include flex-grid-column(4);
+    }
+
+}
+
+.events-calendar__month_name {
+    text-align: center;
+    background-color: #e6e6e6;
+    font-family: Montserrat;
+    font-size: 13px;
+    color: #000000;
+    height: 24px;
+    line-height: 24px;
+
+}
+
+.events-calendar__month_days {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    text-align: center;
+    background-color: #ebebeb;
+    font-family: Arial;
+    font-size: 11px;
+    color: #000000;
+    height: 24px;
+    line-height: 24px;
+}
+
+.events-calendar__days {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: Arial;
+    font-size: 12px;
+    color: #000000;
+
+}
+
+.events-calendar__day {
+    height: 24px;
+    line-height: 24px;
+    font-family: Arial;
+    position: relative;
+    
+    &.event:not(.inactive)::before {
+        content: '';
+        border: 1px solid red;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &.inactive {
+        font-size: 12px;
+        color: #aaaaaa;
+    }
+}
+
+.events-calendar__events {
+
+}
+
+.events-calendar__events_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 9000;
+}
+
+.events-calendar__content {
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    transform: translateY(-100%);
+    z-index: 9001;
+
+    &.invertx {
+        left: initial;
+        right: 100%;
+    }
+}
+
+.events-calendar__event {
+    white-space: nowrap;
+}
+

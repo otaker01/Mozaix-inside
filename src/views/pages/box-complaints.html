@@ -1,17 +1,44 @@
-{{> sidebar activeItem="box"}}
-{{> box-header activeItem="complaints"}}
-{{> rightbar}}
-<div class="page">
-    <div class="feed-div">
-        {{> box-postcard itemType="Complaint"}}
-        {{> box-simplecard itemType='Complaint'}}
-        {{> box-postcard itemType="Complaint"}}
-        {{> box-simplecard itemType='Complaint'}}
-        {{> box-postcard itemType="Complaint"}}
-        {{> box-simplecard itemType='Complaint'}}
-        {{> box-postcard itemType="Complaint"}}
-        {{> box-simplecard itemType='Complaint'}}
-        {{> box-postcard itemType="Complaint"}}
-        {{> box-simplecard itemType='Complaint'}}
+{{> report-splash}}
+{{> report-write}}
+{{> report-splash-out}}
+<div class="main-container">
+        <div class="main-header">
+            <div class="main-header-inner">
+                <div class="main-header-left"></div>
+                <div class="main-header-right">
+                        {{> box-header activeItem="complaints"}}
+                </div>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="main-menu-inner">
+                    {{> sidebar activeItem="box"}}
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-content-inner">
+                <div class="saysomething">
+
+                </div>
+                <div class="feed-div">
+
+                        {{> box-simplecard itemType='Complaint' name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                        {{> box-postcard itemType="Complaint"  name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                        {{> box-simplecard itemType='Complaint' name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                        {{> box-postcard itemType="Complaint"  name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                        {{> box-simplecard itemType='Complaint' name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                        {{> box-postcard itemType="Complaint"  name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                        {{> box-simplecard itemType='Complaint' name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                        {{> box-postcard itemType="Complaint"  name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                        {{> box-simplecard itemType='Complaint' name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+                        {{> box-postcard itemType="Complaint"  name='Anonymous' imageLink="../../assets/toolkit/images/anonymous.png"}}
+
+                </div>
+            </div>
+        </div>
+        <div class="main-sidebar">
+            <div class="main-sidebar-inner">
+                {{> rightbar}}
+            </div>
+        </div>
     </div>
-</div>

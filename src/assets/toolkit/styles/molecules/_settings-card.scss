@@ -1,0 +1,178 @@
+.settings-content {
+    display: flex;
+    // padding: 0px 0px 50px 60px;
+    // margin-right: 115px;
+    padding-top: 20px;
+    flex-direction: column;
+    position: relative;
+    // height: 976px;
+    // background-color: brown;
+}
+
+.settings-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.settings-card {
+    width: 300px;
+    height: fit-content;
+    border-radius: 12px;
+    border: solid 0.7px #c6c6c6;
+    background-color: #ffffff;
+    // margin-right: 12px;
+    // padding-right: 10px;
+}
+.save-change-div {
+ display: flex;
+ justify-content: flex-end;
+}
+.settings-log-out-div {
+    position: absolute;
+    right: -113px;
+    top: -30px;
+}
+.s-card-info-div {
+    border-bottom: 1px solid #c6c6c6;
+    height: 35px;
+    padding: 0px 0 0 10px;
+    display: flex;
+    align-items: center;
+}
+.s-card-info {
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: bold;
+    color: #4a4a4a;
+    // padding: 7px 15px;
+    margin: 0;
+}
+.s-card-icon {
+    // margin: 7px 0 0 7px;
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+.s-photo-div {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.s-photo {
+    padding: 0;
+    margin: 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.s-second-part {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
+}
+.edit-photo-div {
+    position: absolute;
+    bottom: 0px;
+    right: 119px;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border: 1px solid rgb(216, 213, 213);
+    border-radius: 50%;
+    
+}
+.edit-icon {
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    font-size: 13px;
+}
+
+.s-third-part {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.s-input-name  {
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 500;
+    color: #4a4a4a;
+    margin: 0px;
+    // margin-bottom: 5px;
+}
+.s-input {
+    height: 32px;
+    border-radius: 5px;
+    border: solid 0.6px #b5b5b5;
+    background-color: #ffffff;
+    margin: 0px;
+    margin-bottom: 11px;
+    // margin-right: 5px;
+    // padding: 0   ;
+    &::placeholder {
+        color: rgb(19, 19, 19);
+    }
+    &.s-input-large {
+        width: 247px;
+        width: 100%;
+    }
+    &.s-input-medium {
+        text-align: center;
+        width: 40%;
+    }
+    &.s-input-small {
+        text-align: center;
+        width: 30%;
+        margin-right: 10px;
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+//   margin: 0;
+}
+
+.s-second-card {
+    padding: 10px;
+}
+
+.forgot-p-contact {
+    opacity: 0.6;
+    font-family: Raleway;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+.file-input {
+    width: 26px;
+    height: 26px;
+    border: solid 0.6px #707070;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+@media only screen and (max-width:1187px) {
+    .settings-cards {
+        grid-template-columns: auto auto;
+    }
+ 
+}
+@media only screen and (max-width: 880px) {
+    .settings-cards {
+        grid-template-columns: auto;
+    }
+ 
+}

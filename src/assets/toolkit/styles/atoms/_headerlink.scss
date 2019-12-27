@@ -2,12 +2,14 @@
     font-family: Montserrat;
     // font-size: 31px;
     // background-color: red;
-    font-size: 21px;
+    font-size: 17px;
     color: #212121;
-    padding: 3px 20px 3px 20px;
+    // padding: 3px 20px 3px 20px;
+    padding: 3px 0px;
+    margin-right: 10px;
     &.active {
         font-weight: 600;
-        border-bottom: 2px solid #5085e8;
+        border-bottom: 1.5px solid #5085e8;
     }
     &:hover {
         font-weight: 600;

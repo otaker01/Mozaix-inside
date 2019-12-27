@@ -1,5 +1,5 @@
 .team-header {
-    height: 100px;
+    height: 80px;
     border-bottom: 1px solid gray;
     width: 100%;
     // padding: 0 30px;
@@ -16,7 +16,7 @@
     box-shadow: none;
     font-family: Montserrat;
     color: #212121;
-    font-size: 20px;
+    font-size: 16px;
     &:focus {
         outline: none;
         background: none;
@@ -32,28 +32,27 @@
     padding-top: 20px;
     margin: 0;
     display: grid;
-    grid-template-columns: 165px 165px 165px 165px 165px 165px;
-    grid-row-gap: 15px;
-    grid-column-gap: 15px;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-row-gap: 17px;
+    grid-column-gap: 17px;
 }
+
 .team-member {
-    width: 165px;
-    height: 165px;
+    width: 139px;
+    height: 133px;
     border-radius: 6px;
-     background-color: #ffffff;
-     padding: 10px
+    background-color: #ffffff;
+    padding: 10px;
 }
 
 .first-part {
     height: 50%;
     text-align: center;
-    overflow: hidden;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 .team-member-photo {
-    width: 62px;
-    height: 62px;
-    
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 .second-part {
@@ -63,13 +62,13 @@
     height: 50%;
     // align-items: flex-end;
     justify-content: center;
-
+    padding-top: 15px;
 }
 .team-member-name {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: #343434;
-    line-height: 20px;
+    line-height: 15px;
     margin: 0;
     text-transform: capitalize;
     
@@ -77,8 +76,23 @@
 
 .team-member-role {
     color: #838383;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 500;
     margin: 0;
     // text-transform: capitalize;
+}
+
+@media only screen and (max-width:1170px) {
+    .team-members {
+        // background-color: red;
+        grid-template-columns: auto auto auto auto auto ;
+    }
+ 
+}
+@media only screen and (max-width:1010px) {
+    .team-members {
+        // background-color: red;
+        grid-template-columns: auto auto auto auto ;
+    }
+ 
 }

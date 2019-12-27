@@ -1,6 +1,6 @@
 .profile-card-title {
     font-family: Raleway;
-    font-size: 20px;
+    font-size: 0.9rem;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -16,6 +16,7 @@
 
 .right-card {
     .profile-card-title {
-        font-weight: 500;
+        padding-top: 4px;
+        font-weight: 600;
     }
 }

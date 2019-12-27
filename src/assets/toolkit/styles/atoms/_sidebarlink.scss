@@ -1,27 +1,38 @@
 .sidebarlink {
     font-family: Raleway;
-    font-size: 18px;
+    font-size: 15px;
     // font-size: 22px;
     font-weight: 500;
     line-height: 1.17;
     color: #c3c3c3;
-    width: 289px;
+    
     margin: 2px 0px;
     padding: 9px 0 5px 0;
     // padding: 9px 0 5px 11px;
     // border-radius: 3px;
-    height: 43px;
+    height: 33px;
     display: block;
     position: relative;
-
+    span {
+        color: #c3c3c3;
+        &:before {
+            color: #c3c3c3;
+        }
+    }
     &.active{
         font-weight: 700;
         color: #575757;
         background: none;
+        span {
+            color: #000;
+            &:before {
+                color: #000;
+            }
+        }
         &:after {
             content: "";
             width: 5px;
-            height: 43px;
+            height: 33px;
             position: absolute;
             right: 0px;
             top: 0px;
@@ -41,7 +52,7 @@
         &:after {
             content: "";
             width: 5px;
-            height: 43px;
+            height: 33px;
             position: absolute;
             right: 0px;
             top: 0px;
@@ -52,7 +63,9 @@
     }
 }
 .sidebarlinks {
-    padding-top: 20px;
+    padding-top: 6px;
     display: flex;
     flex-direction: column;
+   
 }
+

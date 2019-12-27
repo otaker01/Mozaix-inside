@@ -1,0 +1,121 @@
+.login-div {
+    width: calc(100vw - 40%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.login-div-head {
+    width: 726px;
+    // background-color: crimson;
+    // padding: 40px;
+    height: 720px;
+}
+.background-logo {
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+}
+.main-div-login {
+    z-index: 30;
+     transform: translateY(-726px);
+}
+.main-logo {
+    width: 90px;
+    height: 90px;
+}
+.main-logo-div {
+    width: 100%; text-align: center;
+    padding-top: 55px;
+    //  background-color: crimson;
+}
+.welcome-to {
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 1.23;
+  color: #4a4a4a;
+  padding-top: 25px;
+  margin: 0;
+}
+.inputs-div {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    // background-color: rgb(113, 20, 220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+
+}
+.input-name {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 500;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+}
+.inputs {
+    width: 428px;
+    height: 38px;
+    border-radius: 9px;
+    background-color: #ffffff;
+    border: none;
+}
+.agree-terms {
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    color: #242424;
+}
+.checki {
+    width: 14px;
+    height: 14px;
+    margin-top: 4px;
+}
+.login-button-div {
+    width: 100%;
+    height: 280px;
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo {
+    width: 14.2px;
+    height: 14.2px;
+    margin: 4px;
+    padding: 0;
+    opacity: 0.5;
+    margin-right: 10px;
+}
+.rights {
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #868686;
+    margin: 0;
+    padding: 0;
+}
+.login-div-foot {
+    position: absolute;
+    bottom: 10px;   
+    display: flex;
+    align-items: flex-end;
+}
+
+.terms-main-div {
+    .background-logo {
+        // width: 70;
+        // height: 70;
+    }
+}
+
+.login-warning {
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #ff4545;
+}

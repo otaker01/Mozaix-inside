@@ -1,0 +1,121 @@
+
+$background-color: #F7F7F9;
+$main-menu-background-color: #f2f3f4;
+body {
+    background: $background-color;
+}
+
+.main-container {
+    @include flex-grid-row();   
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    height: 80px;
+    width: 100%;
+    // z-index: 20;
+    
+}
+
+.main-header-inner {
+    @include flex-grid-row();
+    height: 80px;
+}
+
+.main-header-right {
+    @include flex-grid-column(expand);
+    background-color: $background-color;
+    // background-color: crimson;
+}
+
+.main-menu, .main-header-left {
+    @include flex-grid-column(3, 0);
+    max-width: 230px;
+    flex-basis: 230px;
+    background-color: $main-menu-background-color;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100vh;
+        width: 1200px;
+        transform: translateX(-1200px);
+        background-color: $main-menu-background-color;
+    }
+    
+}
+.main-menu {
+    z-index: 10;
+}
+.main-header {
+    z-index: 5;
+}
+
+.main-menu-inner {
+    height: 100vh;
+    position: fixed;
+    width: 230px;
+}
+
+.main-content {
+    @include flex-grid-column(expand);
+    // height: 200px;
+    padding-top: 80px;
+}
+
+.main-content-inner {
+    // height: 2000px;
+}
+
+.main-sidebar {
+    @include flex-grid-column(5,0);
+    max-width: 300px;
+    flex-basis: 300px;
+    padding-top: 80px;
+    // background-color:darkcyan ;
+
+    @include breakpoint(medium down) {
+        display: none;
+    }
+}
+.main-sidebar-inner {
+    height: 200px;
+    position: fixed;
+    width: 300px;
+}
+
+.events-row {
+    @include flex-grid-row();
+    padding-top: 30px;
+}
+.events-column {
+    @include flex-grid-column(12);
+    padding-bottom: 20px;
+    @include breakpoint(800px up) {
+        @include flex-grid-column(6);
+    }
+}
+
+
+.saysomething__content {
+    position: relative;
+    z-index: 0;
+    // padding: 20px;
+    padding-top: 30px;
+    
+    width: 100%;
+    // background: white;
+    border-radius: 10px;
+}
+.saysomething__overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.4);
+    z-index: 100;  
+    overflow: hidden;
+    display: none;   
+}

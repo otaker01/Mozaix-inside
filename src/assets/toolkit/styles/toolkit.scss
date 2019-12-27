@@ -14,6 +14,9 @@
   '../../vendor/Scut/dist/scut',
   '../../vendor/foundation-sites/scss/foundation';
 
+@import '../scripts/events/src/calendar';
+
+
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;
@@ -57,3 +60,5 @@
 @import 'atoms/atoms';
 @import 'molecules/molecules';
 @import 'organisms/organisms';
+
+@import 'organisms/events-calendar';
