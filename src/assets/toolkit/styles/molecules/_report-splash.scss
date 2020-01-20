@@ -2,9 +2,10 @@
     width: 100vw;
     height: 100vh;
     z-index: 24;
-    position: absolute;
+    position: fixed;
     display: none;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .splash-card {
     border: 1px solid lightgray;

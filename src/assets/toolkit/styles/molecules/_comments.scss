@@ -1,10 +1,12 @@
 .comments {
     margin: 10px 0px;
     // background: crimson;
-    // display: none;
-    
-    
+    display: none;
+    &.appear {
+        display: initial;
+    }
 }
+
 .comment {
     display: flex;
     align-items: flex-start;

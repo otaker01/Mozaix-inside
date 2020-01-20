@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+    <defs>
+        <style>
+            .cls-1{fill:#e04f5f}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="negative" transform="translate(-.44)">
+        <circle id="Ellipse_21" cx="10.5" cy="10.5" r="10.5" class="cls-1" data-name="Ellipse 21" transform="translate(.44)"/>
+        <path id="Rectangle_468" d="M0 0h10.865v1.278H0z" class="cls-2" data-name="Rectangle 468" transform="translate(4.781 9.587)"/>
+    </g>
+</svg>

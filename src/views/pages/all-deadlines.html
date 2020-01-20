@@ -1,0 +1,57 @@
+<div class="main-container">
+    <div class="main-header">
+        <div class="main-header-inner">
+            <div class="main-header-left"></div>
+            <div class="main-header-right">
+                    {{> deadlines-header activeItem="all-deadlines"}}
+                    <!-- <div style="background-color: red;  width: 466px;height: 273px; position: fixed; z-index: 1220; top: 0px; right: 10%;"></div> -->
+
+            </div>
+        </div>
+    </div>
+    <div class="main-menu">
+        <div class="main-menu-inner">
+                {{> sidebar activeItem="sand-clock"}}
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- <div class="saysomething">
+                <div class="saysomething__content">
+                    <input />
+                </div>
+                <div class="saysomething__overlay"></div>
+            </div> -->
+            <div class="events-row">
+
+                <div class="events-column">
+                    {{> other-deadline-card cardTitle="Mozaix Inside" daysLeft="6" blueLine="90%"}}
+                </div>
+                <div class="events-column">
+                    {{> other-deadline-card daysLeft="1"}}
+                </div>
+                <div class="events-column">
+                    {{> other-deadline-card cardTitle="Mozaix Inside" daysLeft="6" blueLine="90%"}}
+                </div>
+                <div class="events-column">
+                    {{> other-deadline-card daysLeft="1"}}
+                </div>
+                <div class="events-column">
+                    {{> other-deadline-card daysLeft="10"}}
+                </div>
+                <div class="events-column">
+                    {{> other-deadline-card daysLeft="10"}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-sidebar">
+        <div class="main-sidebar-inner">
+
+            {{> new-deadline}}
+            {{> rightbar}}
+
+        </div>
+
+    </div>
+</div>

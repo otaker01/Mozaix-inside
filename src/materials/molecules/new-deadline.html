@@ -1,0 +1,20 @@
+<div class="new-deadline">
+    <div>
+        <p class="new-deadline-inpput-name">Task Name</p>
+        <input class="deadline-input" type="text" id="" placeholder="Ex. Designing my portofolio">
+    </div>
+    <div>
+        <p  class="new-deadline-inpput-name">Date</p>
+        <input class="deadline-input" type="date" id="" placeholder="DD/MM/YYYY">
+    </div>
+    <div>
+        <label class="deadline-public">
+            <input type="checkbox">
+            <p>Make it public</p>
+        </label>
+    </div>
+    <div class="deadline-buttons">
+        {{> buttons id="cancel-deadline" classes="buttons exit new-deadline-button" text='Cancel'}}
+        {{> buttons id="create-deadline" classes="buttons next new-deadline-button" text="Create"}}
+    </div>
+</div>

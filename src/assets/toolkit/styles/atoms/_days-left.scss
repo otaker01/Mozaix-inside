@@ -1,0 +1,15 @@
+.days-left {
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    color: #a5a5a5;
+    color: rgb(59, 59, 59);
+    &.last-day {
+        color: #EF3700;
+    }
+    &.last-week {
+        color: orange;
+    }
+    &.last-month {
+        color: green;
+    }
+}
